@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/feviicon.webp" />
+    <title>Demo-GPATHSHALA</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/icofont@1.0.1-alpha.1/icofont.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="wrap1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid logo-image">
+                <a class="navbar-brand" href="#">
+                    <img src="img/gpathshala-logo.webp" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> <strong>Why Gpathshala</strong> </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <strong>Explore Programs</strong> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">UG Courses</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">PG Courses</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Engineering Courses</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Top Universities
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">For Management Course</a></li>
+                                <li><a class="dropdown-item" href="#">For Engineering Course</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Quick Enquiry</a></li>
+                                <li><a class="dropdown-item" href="#">Download Brochure</a></li>
+                                <li><a class="dropdown-item" href="#">Notice Board</a></li>
+                                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button type="button" class="btn btn-primary btn-lg">Talk to Experts</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="wrap2">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w2text">
+                        <p class="w2p">Discover your journey</p>
+                        <h1 class="w2h1">Discover <span class="wspan">4500+</span> Courses from top Instructors Around
+                            the World</h1>
+                        <p class="w2p2">Take your learning organization to the next level.
+                            to the next level. Who'll share their knowledge to people around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w2form">
+                        <div class="container">
+                            <h2 class="text-center mb-4 w2formh2">Information Form</h2>
+                            <form id="userForm">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter username"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter Address"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="1" placeholder="Enter message"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                            <div id="result" class="mt-3 alert d-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="wrap3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6" style="padding: 0;">
+                    <div class="w3course">
+                        <p class="w3p">Discover yourself</p>
+                        <h2 class="w3h2">Earn Your Degree with <span class="w3span"> GPathshala </span></h2>
+                        <button class="w3btn">View courses</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="w3under">
+                        <div class="w3img">
+                            <img src="img/postgraduate0.png" alt="">
+                        </div>
+                        <h2 class="w3eh2">Undergraduate</h2>
+                        <p>Higher education is designed for career professionals seeking</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="w3post">
+                        <div class="w3img">
+                            <img src="img/Postgraduate1.png" alt="">
+                        </div>
+                        <h2 class="w3eh2">Postgraduate</h2>
+                        <p>Higher education is designed for career professionals seeking</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="w3re">
+                        <div class="w3img">
+                            <img src="img/research.png" alt="">
+                        </div>
+                        <h2 class="w3eh2">Research Fellow</h2>
+                        <p>Higher education is designed for career professionals seeking</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="w4c1">
+                        <h2>Welcome to Gpathshala Top Online and Distance Learning Platform</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="w4c2">
+                        <h2>Eduma helps you to develop essential education and your career of years experiences.</h2>
+                        <p>Transform your life through education to make the most of each semester to choose the best
+                            major. Prepare for grad school. Whatever it is, you can do it here. Explore our digital
+                            viewbook. Your journey starts here.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="w4img">
+                        <img src="img/wrap4-img.png" alt="">
+                        <div class="badge">
+                            <p>Established</p>
+                            <h1>2024</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap5">
+        <div class="container my-5">
+            <h2 class="text-dark fw-bold">Discover <br> Our <span class="text-primary">Best</span> Courses</h2>
+            <div class="d-flex flex-wrap mb-4">
+                <nav class="course-nav">
+                    <a href="#" class="nav-link active" data-category="all">View All</a>
+                    <a href="#" class="nav-link" data-category="ug">UG Course</a>
+                    <a href="#" class="nav-link" data-category="pg">PG Course</a>
+                    <a href="#" class="nav-link" data-category="diploma">Diploma Course</a>
+                    <a href="#" class="nav-link" data-category="engineering">Eng. Courses</a>
+                </nav>
+            </div>
+
+            <div class="row" id="course-list">
+                <!-- Dynamic courses will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap6">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6img">
+                        <img src="img/wrap6img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6text">
+                        <h2>Become an Instructor And Teach Online</h2>
+                        <p>Helping employees gain skills and providing career <br> development often take a back seat to
+                            business priorities <br> but workplace.</p>
+                        <button type="button" class="btn btn-primary btn-lg">Join Us Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="wrap6">
+        <div class="container wrap6-1">
+            <div class="row ">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6text">
+                        <h2>Live Class From Anywhere Via <span>Zoom</span> </h2>
+                        <p>Helping employees gain skills and providing career <br> development often take a back seat to
+                            business priorities <br> but workplace.</p>
+                        <button type="button" class="btn btn-primary btn-lg">Try free now</button>
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6img">
+                        <img src="img/wrap7img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="wrap7">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-all-4 col-tl-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="flex">
+                        <img src="img/wrap7.1.png" alt="">
+                        <p>Learn with skills over 2,420 courses</p>
+                    </div>
+                </div>
+                <div class="col-4 col-all-4 col-tl-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="flex">
+                        <img src="img/wrap7.2.png" alt="">
+                        <p>Earn certificates and degrees</p>
+                    </div>
+                </div>
+                <div class="col-4 col-all-4 col-tl-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="flex">
+                        <img src="img/wrap7.3.png" alt="">
+                        <p>Learn from anywhere, any time</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap8">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w8text">
+                        <h2>Why Students Choose Us for Gain Their Knowledge</h2>
+                        <p>Helping employees gain skills and providing career development often take a back seat to
+                            business priorities but workplace.</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="check">Why Students Choose Us for Gain Their Knowledge</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="check">Easy to enroll courses</p>
+                        </div>
+                        <div class="flex">
+                            <i class="fa-solid fa-check"></i>
+                            <p class="check">Course certificate for particular course</p>
+                        </div>
+                        <button type="button" class="w8btn btn btn-primary btn-lg">More about us</button>
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w8img">
+                        <img src="img/wrap8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap9">
+        <div class="container py-5">
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+                    <div class="card card-custom bg-light">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-6 p-4">
+                                <h5 class="card-title">Benefits of Online Learning</h5>
+                                <p class="card-text">Become an instructor and spread your knowledge</p>
+                                <a href="#" class="btn btn-custom">View details</a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/wrap9.1.png" alt="Online Learning" class="img-fluid-custom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="card card-custom bg-light">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-6 p-4">
+                                <h5 class="card-title">Benefits of Distance Learning</h5>
+                                <p class="card-text">Keep your skilled centers of excellence competitive</p>
+                                <a href="#" class="btn btn-custom">Browse courses</a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/wrap9.2.png" alt="Distance Learning" class="img-fluid-custom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap10">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; ">What Students Think and Say About Eduman</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="img-terr flex">
+                        <img src="img/testimonial.png" alt="">
+                        <h6>Richard Joseph</h6>
+                        <img src="img/quotes.png" alt="">
+                    </div>
+                    <p>Student</p>
+                    <h3>Helpful Instructors!</h3>
+                    <p>There are so many websites out there that have not considered...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <div class="img-terr flex">
+                        <img src="img/testimonial.png" alt="">
+                        <h6>Richard Joseph</h6>
+                        <img src="img/quotes.png" alt="">
+                    </div>
+                    <p>Student</p>
+                    <h3>Helpful Instructors!</h3>
+                    <p>There are so many websites out there that have not considered...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <div class="img-terr flex">
+                        <img src="img/testimonial.png" alt="">
+                        <h6>Richard Joseph</h6>
+                        <img src="img/quotes.png" alt="">
+                    </div>
+                    <p>Student</p>
+                    <h3>Helpful Instructors!</h3>
+                    <p>There are so many websites out there that have not considered...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+
+                    <div class="img-terr flex">
+                        <img src="img/testimonial.png" alt="">
+                        <h6>Richard Joseph</h6>
+                        <img src="img/quotes.png" alt="">
+
+                    </div>
+                    <p>Student</p>
+
+                    <h3>Helpful Instructors!</h3>
+                    <p>There are so many websites out there that have not considered...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                </div>
+                <div class="testimonial">
+                    <div class="img-terr flex">
+                        <img src="img/testimonial.png" alt="">
+                        <h6>Richard Joseph</h6>
+                        <img src="img/quotes.png" alt="">
+                    </div>
+                    <p>Student</p>
+                    <h3>Helpful Instructors!</h3>
+                    <p>There are so many websites out there that have not considered...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap6">
+        <div class="container w10">
+            <div class="row">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6img">
+                        <img src="img/wrap6.3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6text">
+                        <h2>Transform Your Life Through Education</h2>
+                        <p>Helping employees gain skills and providing career development often take a back seat to
+                            business priorities but workplace.</p>
+                        <button type="button" class="btn btn-primary btn-lg">Watch how to start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="wrap6" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6text">
+                        <h2>Our GlobalHonorable Partners</h2>
+                        <p>Global partners has been Publish the course you want, in the way you want always have of
+                            control.</p>
+                        <p> <span>9,500</span>+businesses & students around the world</p>
+                    </div>
+                </div>
+                <div class="col-6 col-tp-12 col-ml-12 col-mp-12">
+                    <div class="w6img1">
+                        <img src="img/wrap6.4.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="toptobottom">
+        <button id="scrollToTopBtn">
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="22" stroke-width="4" fill="none" stroke="#d3d3d3" />
+                <circle id="progressCircle" cx="25" cy="25" r="22" stroke-width="4" fill="none" stroke="#007bff"
+                    stroke-dasharray="138.2" stroke-dashoffset="138.2" />
+            </svg>
+            <span class="arrow">&#8679;</span>
+        </button>
+    </section>
+
+    <section class="wraplast">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="img/footer-logo.png" alt="">
+                    <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as best
+                        plans
+                        to knowledge.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Online Platform</h3>
+                    <ul>
+                        <li><a href="#">Proper Guidelines</a></li>
+                        <li><a href="#">Digital Library</a></li>
+                        <li><a href="#">Compare Us</a></li>
+                        <li><a href="#">Become Instructor</a></li>
+                        <li><a href="#">Build Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Browse Courses</h3>
+                    <ul>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Health & Fitness</a></li>
+                        <li><a href="#">Life Styles</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Insight Community</h3>
+                    <ul>
+                        <li><a href="#">Global Partners</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row footer-bottom">
+                    <div class="col-4 col-p-12">
+                        <p>© Copyrighted & Designed by</p>
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <i class="fa-solid fa-headphones" id="phone"></i>
+                        <p class="call">Have a question? Call us 24/7</p>
+                        <p class="num">(+91) 9910493399</p>
+
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <p>Location
+                            C-24, Sector-2, Noida - 201301</p>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let dropdowns = document.querySelectorAll(".dropdown");
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener("mouseenter", function () {
+                    this.classList.add("show");
+                    this.querySelector(".dropdown-menu").classList.add("show");
+                });
+
+                dropdown.addEventListener("mouseleave", function () {
+                    this.classList.remove("show");
+                    this.querySelector(".dropdown-menu").classList.remove("show");
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const dob = document.getElementById('dob').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            document.getElementById('result').innerHTML = `
+            <div class='alert alert-success'>
+                <strong>Submitted Information:</strong><br>
+                Username: ${username}<br>
+                Date of Birth: ${dob}<br>
+                Address: ${address}<br>
+                Email: ${email}<br>
+                Message: ${message}
+            </div>`;
+        });
+    </script>
+
+    <script>
+        // Course data categorized
+        const courses = {
+            all: [
+                { img: './img/diploma.jpg', title: 'Diploma Engineering', type: 'Part-Time' },
+                { img: './img/B.Tech.jpg', title: 'B.Tech Engineering', type: 'Part-Time' },
+                { img: './img/M.Tech.jpg', title: 'M.Tech Engineering', type: 'Part-Time' },
+                { img: './img/Civil.jpg', title: 'Civil Engineering', type: 'Full-Time' }
+            ],
+            ug: [
+                { img: './img/B.Tech.jpg', title: 'B.Tech Civil', type: 'Full-Time' },
+                { img: './img/M.Tech.jpg', title: 'B.Tech Mechanical', type: 'Full-Time' }
+            ],
+            pg: [
+                { img: './img/diploma.jpg', title: 'M.Tech Computer Science', type: 'Full-Time' },
+                { img: './img/Civil.jpg', title: 'M.Tech Electrical', type: 'Full-Time' }
+            ],
+            diploma: [
+                { img: './img/Civil.jpg', title: 'Diploma in IT', type: 'Part-Time' },
+                { img: './img/Civil.jpg', title: 'Diploma in Mechanical', type: 'Part-Time' }
+            ],
+            engineering: [
+                { img: './img/Civil.jpg', title: 'Software Engineering', type: 'Full-Time' },
+                { img: './img/Civil.jpg', title: 'Electrical Engineering', type: 'Part-Time' }
+            ]
+        };
+
+        // Function to render courses based on selected category
+        function renderCourses(category) {
+            const courseList = document.getElementById('course-list');
+            courseList.innerHTML = ''; // Clear previous content
+
+            courses[category].forEach(course => {
+                const courseCard = `
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="course-card">
+                    <img src="${course.img}" alt="${course.title}">
+                    <div class="course-content">
+                        <span class="badge bg-success">${course.type} Course</span>
+                        <h3>${course.title}</h3>
+                        <p>For Working Professionals</p>
+                        <a href="#" class="view-details">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        `;
+                courseList.innerHTML += courseCard;
+            });
+        }
+
+        // Event listeners for category navigation links
+        document.querySelectorAll('.course-nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelectorAll('.course-nav a').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+
+                const category = this.getAttribute('data-category');
+                renderCourses(category);
+            });
+        });
+
+        // Load all courses by default
+        renderCourses('all');
+
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                dots: true, // Enable dots navigation
+                infinite: true, // Loop slides
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [
+                    {
+                        breakpoint: 768, // For tablets
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // For mobile
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+
+    </script>
+    <script>
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        const progressCircle = document.getElementById('progressCircle');
+        const radius = progressCircle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        progressCircle.style.strokeDasharray = circumference;
+
+        function setProgress(scrollPercentage) {
+            const offset = circumference - (scrollPercentage / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+        }
+
+        // Show/hide button based on scroll
+        window.addEventListener('scroll', () => {
+            const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = (window.scrollY / scrollTotal) * 100;
+
+            if (window.scrollY > 100) {
+                scrollBtn.style.display = 'flex';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+
+            setProgress(scrollProgress);
+        });
+
+        // Scroll to top on click
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
